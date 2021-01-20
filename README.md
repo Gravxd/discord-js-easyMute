@@ -9,6 +9,8 @@ Discord-js v11.6.4
 
 Go to your terminal and use `npm i ms`
 
+Go to line `33` and put the id of the muted role inside the "" as instructed!
+
 **If you attempt to change the command's functions or content it could break so don't mess with it unless you have some idea!** 
 
 For help, join the [support server.](https://discord.gg/ZYHxxba)
