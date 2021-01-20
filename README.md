@@ -25,3 +25,10 @@ For help, join the [support server.](https://discord.gg/ZYHxxba)
 
 !mute [userid] 5d
  It supports either an id or mention and can use seconds, minutes, hours or days!
+
+**UPDATE:** 
+
++ Reason 
+
+Command is now `!mute @user 1d Doing bad things.` for example
+A reason does `not` have to be provided, if no reason is provided, it will just say 'None Provided!'
