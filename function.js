@@ -43,9 +43,11 @@ client.on('message', message => {
       .setDescription(`**Error!**\n\`${coolUser.user.tag}\` is already on cooldown!`);
       return message.channel.send(already_cool)
     }
+    let reason = args.slice(3).join(" ")
+    if(!reason) reason = 'None Provided.'
     const successCooldown = new RichEmbed()
     .setColor('hexcolor')
-    .setDescription(`**Success!**\nI have placed \`${coolUser.user.tag}\` on a \`${time}\` cooldown!`);
+    .setDescription(`**Success!**\nI have placed \`${coolUser.user.tag}\` on a \`${time}\` cooldown!\n\nReason: \`${reason}\``);
     coolUser.addRole(cooldownRole.id)
     message.channel.send(successCooldown).then(msg => {
       setTimeout(() => {
